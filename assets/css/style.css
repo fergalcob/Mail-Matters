@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    width: 100%;
+    height: 1800px;
+    background-color: #555555;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    font-family: Segoe UI;
+    border-bottom: 3px solid #587fff;
+    position: fixed;
+}
+
+.navbar ul {
+    display: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    text-align: right;
+}
+
+#logo {
+    float: left;
+    margin: 0 10px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+#burger_menu {
+    float: right;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked~ul {
+    display: block;
+    float: right;
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width:767px) {
+    input[type=checkbox]:checked~ul {
+        width: unset;
+    }
+
+    .navbar>img {
+        display: none;
+    }
+
+    .navbar ul {
+        display:block;
+        float: right;
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        color: #ffffff;
+
+    }
+
+    .navbar li:hover {
+        display: inline-block;
+        margin: 0;
+        padding: 20px;
+        background-color: #ffffff;
+    }
+
+    .navbar li:hover a {
+        background-color: #ffffff;
+        color: #000000;
+        text-decoration: underline 2px #587fff;
+    }
+
+    #burger_menu {
+        display: none;
+    }
+
+}
