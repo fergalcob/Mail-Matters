@@ -1,3 +1,5 @@
+/* general body structure common to all pages */
+
 *{
 	margin:0;
 	padding:0;
@@ -11,7 +13,7 @@ body{
 	min-height:100%;
 	background-color:#555555;
 }
-.content-container {
+.content_container{
   min-height: 100vh;
 	display:flex;
 	flex-direction:column;
@@ -19,36 +21,29 @@ body{
 header{
 	width:100%;
 	height:auto;
-	background-color:#000000;
+	background-color:#666666;
 	font-family:Segoe UI;
-	border-bottom:3px solid #587fff;
+	border-bottom:4px solid #d1d1d1;
 	position:fixed;
 	top:0;
-	z-index:1;
+	z-index:2;
 }
+
 main{
 width:100%; 	
-	z-index:-1;
+	z-index:1;
 	height:100%;
 }
-#feedback{
-		background:url("../images/feedback.jpg")repeat center center;
-		background-size: cover;
-		background-attachment:fixed;
-		padding-top:60px;
-		padding-bottom:60px;
-}
-.body{
-	flex:1;
-}
+
 footer{
 	width:100%;
 	text-align:center;
 	font-size:.75em;
 	color:#ffffff;
 	background-color:#666666;
+	border-top:4px outset #d1d1d1;
 }
-	
+/* navbar and logo settings including mobile dropdown menu */	
 .navbar ul{
   display: none;
 }
@@ -87,6 +82,7 @@ text-align:right;
 	width:100%;
 }
 
+/* footer layout and icon formatting */
 .social_media i{
 text-decoration:none;
 color:#ffffff;
@@ -111,100 +107,292 @@ padding:10px;
 	grid-area:icons;
 
 }
-.feedback_form{
-	height:100%;
-	width:75%;
-	margin:80px 20px 0 20px;
+/* front page masthead additions */
+#masthead_image{
+	width:100vw;
+	height:80vh;
+	overflow:hidden;
 }
-.feedback_text{
-	height:100%;
-	width:75%;
-	margin:50px 20px 0 30px;
-	background-color:rgba(125,125,125,0.75);
-	padding:25px;
-		line-height:2em;
-	border-radius:50px;
-}
-form{
-	height:100%;
+
+picture img{
+	object-fit:cover;
 	width:100%;
-background-color:rgba(125,125,125,0.75);
-	margin-left:10px;
-	padding:25px;
-		line-height:2em;
-	border-radius:50px;}
-.feedback_form label{
-	font-size: 20px;
+	height:100%;
 }
-.text-input-other{
-	display:block;
-	width:100%;
-	font-size:18px;
-}
-.text-input-name{
-	display:block;
-	width:100%;
-	font-size:18px;
-}
-#submit{
-	display:block;
-	font-size:16px;
-	padding:15px;
-	margin-top:10px;
-	border-radius:10px;
-}
-@media screen and (min-width:767px){
-.navbar input[type=checkbox]:checked ~ ul {
-	width:unset;
-}
-	.navbar > img{
-		display:none;
-	}
-	.navbar ul{
-		display:inline-block;
-		float:right;
-	}
-	.navbar li{
-		display:inline-block;
-		margin:10px;
-		padding:10px;
+
+/* Front Page Layout And Styling */
+	/*Container Styling To Allow For Single-Column Display Of Front Page Site-Goals On Mobile Devices */
+	.mission_statement{
+		display:flex;
+		justify-content: center;
+		flex-direction:column;
+		margin:10px auto;
+		background-color:#cdcdcd;
+		border-radius:10px;
+		width:80vw;
+		}
+		
+	/* Styling Of the Individual Goals Items */
+		.goals{
+		margin:20px;
+		padding:30px;
+		}
+		
+		.goals h2{
+		border-bottom:1px solid #ffffff;
+		font-size:1.5em;
 		color:#ffffff;
+		text-align:center;
+		display:table;
+		margin:0 auto;
+		}
+		
+		.goals:first-child,.goals:nth-child(2){
+		border-bottom:2px solid #000000;
+		padding-bottom:50px;
+		}
+		
+		.goals:nth-child(2),.goals:nth-child(3){
+		padding-top:0;
+		}
+		
+		
+	/*Container Styling To Allow For Single-Column Display Of Front Page Page Links On Mobile Devices */
+		.page_links{
+		display:flex;
+		justify-content: center;
+		flex-direction:column;
+		}
+		.pages{
+		margin:50px auto;
+		padding: 20px;
+		background-color:#ffffff;
+		border-radius:10px;
+		width:80vw;
+		align-self:stretch;
+		}
+		.pages img{
+		display:block;
+		height:auto;
+		width:75vw;
+		margin:20px auto;
+		border-radius:10px;
+		transition:0.5s ease-in-out;
+		}
 
-	}
-	.navbar li:hover{
-		display:inline-block;
-		margin:0;
-		padding:20px;
-		background-color:#ffffff;
-	}	
-	.navbar li:hover a{
-		background-color:#ffffff;
-		color:#000000;
-		text-decoration:underline 2px #587fff;
-	}
-#burger_menu{
-	display:none;
+.pages img:hover{
+	opacity:0.5;
+}	
+
+.read_more_links{
+	display:inline-block;
+	margin-top:10px;
+	padding:20px 15px;
+	color:#ffffff;
+	background-color:red;
+	border-radius:20px;
+	text-decoration:none;
+	transition:0.5s ease-in-out;
+	border:1px solid #ffffff;
 }
+.read_more_links:hover{
+	background-color:#ffffff;
+	color:red;
+	border:1px solid red;
+}
+
+/* basics.html Page Layout And Styling */
+	
+	.basics_body{
+	width:90%;
+	height:100%;
+	margin:0 auto;
+	background-color:#666666;
+	overflow:auto;
+	}
+	.basics_intro{
+	height:100%;
+	width:90%;
+	margin:30px auto;
+	padding:20px 15px;
+	background-color:#ffffff;
+	border-radius:20px;
+	position:relative;
+	}
+	.html_email{
+	height:100%;
+	width:90%;
+	margin:20px auto;
+	padding:20px 15px;
+	background-color:#ffffff;
+	border-radius:20px;
+	}
+	
+	/* Styling Of The basics.html Masthead Image */
+		#basics_masthead{
+		width:100vw;
+		height:80vh;
+		}
+	
+		#basics_masthead img{
+		width:100%;
+		height:100%;
+		object-fit:cover;
+		object-position:center center;
+		}
+
+	
+/* Styling For specifics.html */
+	.specifics_body{
+	margin:20px 5vw;
+	}
+	/* Masthead Styling For Specifics Page */
+		#specifics_masthead{
+		width:100vw;
+		height:80vh;
+		}
+	
+		#specifics_masthead img{
+		width:100%;
+		height:100%;
+		object-fit:cover;
+		object-position:center center;
+		}
+
+	/*Styling For The Gmail Portion Of The Specifics Page */
+		.gmail p{
+		background-color:#cdcdcd;
+		height:100%;
+		border-radius:20px;
+		padding:10px;
+		margin:15px;
+		}
+		
+		.gmail{
+		padding:5px;
+		margin:10px;
+		background-color:#ffffff;
+		border-radius:20px;
+		}
+
+		.gmail_border{
+		box-shadow: inset 0 0 0 4px  #DB4437;
+		background-color:#ffffff;
+		height:100%;
+		padding:10px;
+		border-radius:inherit;
+		}
+		
+		.gmail h3{
+		display:inline;
+		}
+		.clients h2{
+		text-align:center;
+		}
+	
+	/*Styling For The Outlook Portion Of The Specifics Page */
+		.outlook{
+		padding:5px;
+		margin:10px;
+		background-color:#ffffff;
+		border-radius:20px;
+		}
+
+		.outlook_border{
+		box-shadow: inset 0 0 0 4px  #00a2ed;
+		background-color:#ffffff;
+		height:100%;
+		padding:10px;
+		border-radius:inherit;
+		}
+
+		
+		.outlook p{
+		background-color:#cdcdcd;
+		height:100%;
+		border-radius:20px;
+		padding:10px;
+		margin:15px;
+		}
+
+		.outlook h3{
+		display:inline;
+		}
+		
+		/* Flexbox Set Up For Outlook Sub-Items For Column Adjustment Per Device Type */
+			.outlook_container{
+			display:flex;
+			flex-direction:column;
+			justify-content:space-around;
+			}
+			
+/* Contact Page and Feedback Form styling */
+
 #feedback{
-	display:flex;
-	flex-direction:row;
-	justify-content:center;
-	align-items:center;
+	background:url("feedback.jpg")repeat center center;
+	background-size: cover;
+	background-attachment:fixed;
+	padding-top:60px;
+	padding-bottom:60px;
 }
-.feedback_text{
-	width:40%;
+	/* Styling For The Feedback Text Box */
+		.feedback_text{
+		height:100%;
+		width:75%;
+		margin:50px 20px 0 30px;
+		background-color:rgba(125,125,125,0.75);
+		padding:25px;
+		line-height:2em;
+		border-radius:50px;
 }
-.feedback_form{
-	width:40%;
-}
+	/* Styling For The Form Layout And Form Fields */
+		.feedback_form{
+		height:100%;
+		width:75%;
+		margin:80px 20px 0 20px;
+		}
+		form{
+		height:100%;
+		width:100%;
+		background-color:rgba(125,125,125,0.75);
+		margin-left:10px;
+		padding:25px;
+		line-height:2em;
+		border-radius:50px;}
+	
+		.feedback_form label{
+		font-size: 20px;
+		}
+
+		.text-input-other{
+		display:block;
+		width:100%;
+		font-size:18px;
+		}
+
+		.text-input-name{
+		display:block;
+		width:100%;
+		font-size:18px;
+		}
+
+		#submit{
+		display:block;
+		font-size:16px;
+		padding:15px;
+		margin-top:10px;
+		border-radius:10px;
+		}
+
+		
+/*404 Page Background Image And Error Text Styling */
+.error_404{
+	background:url("error.jpg")no-repeat center center;
+	background-size:cover;
+	width:100%;
+	height:100vh;
 }
 
-.error_404{
-background:url("error.jpg")no-repeat center center;
-background-size:cover;
-width:100%;
-height:100vh;
-}
 .error_404_text{
 	font-size:2.5em;
 	background-color:rgba(125,125,125,0.75);
@@ -217,5 +405,132 @@ height:100vh;
 	transform:translate(-50%,-50%);
 	text-align:center;
 	
+}
+
+/*Thank You Page Background Image And Thank You Text Styling */
+#feedback_thank_you{
+	background:url("feedback.jpg")repeat center center;
+	background-size: cover;
+	padding-top:60px;
+	padding-bottom:60px;
+	height:85vh;
+}
+#thank_you_text{
+	height:100%;
+	margin: 50px;
+	background-color:rgba(125,125,125,0.75);
+	object-fit:center;
+	font-size:2em;
+	text-align:center;
+}
+
+.icon_container{
+text-align:center;
+}
+.icons{
+	margin:20px 10px;
+	height:96px;
+	width:96px;
+}
+/* Styling For Laptops And Desktops */
+
+@media screen and (min-width:767px){
+	/* Full-Width Navbar And Logo */
+	.navbar input[type=checkbox]:checked ~ ul {
+	width:unset;
+	}
+	
+	.navbar > img{
+	display:none;
+	}
+	
+	.navbar ul{
+	display:inline-block;
+	float:right;
+	}
+	
+	.navbar li{
+	display:inline-block;
+	margin:10px;
+	padding:10px;
+	color:#ffffff;
+	}
+	
+	.navbar li:hover{
+	display:inline-block;
+	margin:0;
+	padding:20px;
+	background-color:#ffffff;
+	}
+	
+	.navbar li:hover a{
+	background-color:#ffffff;
+	color:#000000;
+	text-decoration:underline 2px #d1d1d1;
+	}
+	
+	#burger_menu{
+	display:none;
+	}
+
+.mission_statement{
+	flex-direction:row;
+	flex:1 1 50%;
+}
+
+.goals{
+	width:80%;
+}
+
+.feedback_text, .feedback_form{
+	width:40%;
+}
+
+.pages{
+	margin:50px;
+	width:50vw;
+}
+
+.pages img{
+	max-width:30vw;
+	height:auto;
+}
+
+.outlook_issue{
+	flex:0 0 50%;
+}
+
+/* Dividers Layout On Cover Page Goals Section */
+	.goals:first-child,.goals:nth-child(2){
+	border-right:2px solid #000000;
+	border-bottom:unset;
+	}
+	.goals:nth-child(2),.goals:nth-child(3){
+	padding-top:30px;
+	padding-left:0;
+	}
+
+/* Switching Single-Column Flexboxes To Multi-Column View For Larger Devices */
+#feedback{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+.outlook_container{
+flex-direction:row;
+}
+
+.page_links{
+	flex-direction:row;
+	align-items:center;
+}
+
+.icons{
+	margin:20px 30px;
+	width:160px;
+	height:160px;
+}
+
 }
 
