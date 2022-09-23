@@ -4,6 +4,7 @@
 	margin:0;
 	padding:0;
 	border:0;
+	font-family:Helvetica;
 }
 html{
 	min-height:100%;
@@ -12,6 +13,7 @@ body{
 	width:100%;
 	min-height:100%;
 	background-color:#555555;
+	font-size:13px;
 }
 .content_container{
   min-height: 100vh;
@@ -43,6 +45,23 @@ footer{
 	background-color:#666666;
 	border-top:4px outset #d1d1d1;
 }
+h1,h2,h3,h4{
+	font-family:Trebuchet MS;
+}
+
+p,li,label{
+	line-height:1.75;
+	font-size:1em;
+}
+h2{
+	font-size:1.8em;
+}
+h3{
+	font-size:1.75em;
+}
+h4{
+	font-size:1.5em;
+}
 /* navbar and logo settings including mobile dropdown menu */	
 .navbar ul{
   display: none;
@@ -57,6 +76,7 @@ list-style-type:none;
 padding:10px;
 margin:10px;
 text-align:right;
+font-weight: 500;
 }
 #logo{
 	float:left;
@@ -77,7 +97,7 @@ text-align:right;
 .navbar input[type=checkbox]:checked ~ ul {
     display: block;
 	float:right;
-	background-color:#000000;
+	background-color:#666666;
 	height:100%;
 	width:100%;
 }
@@ -110,7 +130,8 @@ padding:10px;
 /* front page masthead additions */
 #masthead_image{
 	width:100vw;
-	height:80vh;
+	height:70vh;
+	margin-top:7vh;
 	overflow:hidden;
 }
 
@@ -134,13 +155,12 @@ picture img{
 		
 	/* Styling Of the Individual Goals Items */
 		.goals{
-		margin:20px;
-		padding:30px;
+		margin:10px;
+		padding:30px 10px;
 		}
-		
+
 		.goals h2{
 		border-bottom:1px solid #ffffff;
-		font-size:1.5em;
 		color:#ffffff;
 		text-align:center;
 		display:table;
@@ -149,13 +169,22 @@ picture img{
 		
 		.goals:first-child,.goals:nth-child(2){
 		border-bottom:2px solid #000000;
-		padding-bottom:50px;
+		padding-bottom:30px;
 		}
 		
 		.goals:nth-child(2),.goals:nth-child(3){
 		padding-top:0;
 		}
 		
+		.goals p{
+			margin-top:20px;
+		}
+		.icon_left{
+			margin-right:20px;
+		}
+		.icon_right{
+			margin-left:20px;
+		}
 		
 	/*Container Styling To Allow For Single-Column Display Of Front Page Page Links On Mobile Devices */
 		.page_links{
@@ -189,7 +218,7 @@ picture img{
 	margin-top:10px;
 	padding:20px 15px;
 	color:#ffffff;
-	background-color:red;
+	background-color:#96465b;
 	border-radius:20px;
 	text-decoration:none;
 	transition:0.5s ease-in-out;
@@ -197,8 +226,8 @@ picture img{
 }
 .read_more_links:hover{
 	background-color:#ffffff;
-	color:red;
-	border:1px solid red;
+	color:#96465b;
+	border:1px solid #96465b;
 }
 
 /* basics.html Page Layout And Styling */
@@ -210,9 +239,13 @@ picture img{
 	background-color:#666666;
 	overflow:auto;
 	}
+	.basics_body h2{
+	text-align:center;
+	margin-bottom:10px;
+	}
 	.basics_intro{
 	height:100%;
-	width:90%;
+	width:80%;
 	margin:30px auto;
 	padding:20px 15px;
 	background-color:#ffffff;
@@ -221,7 +254,7 @@ picture img{
 	}
 	.html_email{
 	height:100%;
-	width:90%;
+	width:80%;
 	margin:20px auto;
 	padding:20px 15px;
 	background-color:#ffffff;
@@ -231,7 +264,8 @@ picture img{
 	/* Styling Of The basics.html Masthead Image */
 		#basics_masthead{
 		width:100vw;
-		height:80vh;
+		height:70vh;
+		margin-top:7vh;
 		}
 	
 		#basics_masthead img{
@@ -244,12 +278,20 @@ picture img{
 	
 /* Styling For specifics.html */
 	.specifics_body{
-	margin:20px 5vw;
+	width:90%;
+	height:100%;
+	margin:0 auto;
+	background-color:#666666;
+	overflow:auto;
+	}
+	summary{
+		margin-left:15px;
 	}
 	/* Masthead Styling For Specifics Page */
 		#specifics_masthead{
 		width:100vw;
-		height:80vh;
+		height:70vh;
+		margin-top:7vh;
 		}
 	
 		#specifics_masthead img{
@@ -260,7 +302,7 @@ picture img{
 		}
 
 	/*Styling For The Gmail Portion Of The Specifics Page */
-		.gmail p{
+		.gmail_issues{
 		background-color:#cdcdcd;
 		height:100%;
 		border-radius:20px;
@@ -268,9 +310,14 @@ picture img{
 		margin:15px;
 		}
 		
+		.gmail_issues li{
+			width:80%;
+			margin:10px auto;
+		}
+		
 		.gmail{
 		padding:5px;
-		margin:10px;
+		margin:20px;
 		background-color:#ffffff;
 		border-radius:20px;
 		}
@@ -283,17 +330,18 @@ picture img{
 		border-radius:inherit;
 		}
 		
-		.gmail h3{
+		.gmail h4{
 		display:inline;
 		}
 		.clients h2{
 		text-align:center;
+		margin-bottom:10px;
 		}
 	
 	/*Styling For The Outlook Portion Of The Specifics Page */
 		.outlook{
 		padding:5px;
-		margin:10px;
+		margin:20px;
 		background-color:#ffffff;
 		border-radius:20px;
 		}
@@ -307,15 +355,18 @@ picture img{
 		}
 
 		
-		.outlook p{
+		.outlook_issues{
 		background-color:#cdcdcd;
 		height:100%;
 		border-radius:20px;
 		padding:10px;
 		margin:15px;
 		}
-
-		.outlook h3{
+		.outlook_issues img{
+			width:100%;
+		}
+		
+		.outlook h4{
 		display:inline;
 		}
 		
@@ -329,7 +380,7 @@ picture img{
 /* Contact Page and Feedback Form styling */
 
 #feedback{
-	background:url("feedback.jpg")repeat center center;
+	background:url("feedback.webp")repeat center center;
 	background-size: cover;
 	background-attachment:fixed;
 	padding-top:60px;
@@ -339,26 +390,31 @@ picture img{
 		.feedback_text{
 		height:100%;
 		width:75%;
-		margin:50px 20px 0 30px;
-		background-color:rgba(125,125,125,0.75);
-		padding:25px;
+		margin:50px auto 0 auto;
+		background-color:rgba(125,125,125,0.8);
+		padding:30px;
 		line-height:2em;
 		border-radius:50px;
-}
+		}
+	
+	.feedback_text ul{
+		margin-left:50px;
+	}
 	/* Styling For The Form Layout And Form Fields */
 		.feedback_form{
 		height:100%;
 		width:75%;
-		margin:80px 20px 0 20px;
+		margin:80px auto 0 auto;
+		background-color:rgba(125,125,125,0.8);
+		padding:30px;
+		border-radius:50px;
 		}
+		
 		form{
 		height:100%;
 		width:100%;
-		background-color:rgba(125,125,125,0.75);
-		margin-left:10px;
-		padding:25px;
 		line-height:2em;
-		border-radius:50px;}
+		}
 	
 		.feedback_form label{
 		font-size: 20px;
@@ -368,12 +424,14 @@ picture img{
 		display:block;
 		width:100%;
 		font-size:18px;
+		opacity:0.6;
 		}
 
 		.text-input-name{
 		display:block;
 		width:100%;
 		font-size:18px;
+		opacity:0.6;
 		}
 
 		#submit{
@@ -387,7 +445,7 @@ picture img{
 		
 /*404 Page Background Image And Error Text Styling */
 .error_404{
-	background:url("error.jpg")no-repeat center center;
+	background:url("error.webp")no-repeat center center;
 	background-size:cover;
 	width:100%;
 	height:100vh;
@@ -409,7 +467,7 @@ picture img{
 
 /*Thank You Page Background Image And Thank You Text Styling */
 #feedback_thank_you{
-	background:url("feedback.jpg")repeat center center;
+	background:url("feedback.webp")repeat center center;
 	background-size: cover;
 	padding-top:60px;
 	padding-bottom:60px;
@@ -419,9 +477,9 @@ picture img{
 	height:100%;
 	margin: 50px;
 	background-color:rgba(125,125,125,0.75);
-	object-fit:center;
 	font-size:2em;
 	text-align:center;
+	border-radius:50px;
 }
 
 .icon_container{
@@ -432,9 +490,18 @@ text-align:center;
 	height:96px;
 	width:96px;
 }
+
+pre{
+			white-space:pre-line;
+		}
 /* Styling For Laptops And Desktops */
 
-@media screen and (min-width:767px){
+@media screen and (min-width:414px) and (max-width:767px){
+	body{
+		font-size:15px;
+}
+}
+@media screen and (min-width:768px){
 	/* Full-Width Navbar And Logo */
 	.navbar input[type=checkbox]:checked ~ ul {
 	width:unset;
@@ -476,10 +543,12 @@ text-align:center;
 .mission_statement{
 	flex-direction:row;
 	flex:1 1 50%;
+	width:90vw;
 }
 
 .goals{
 	width:80%;
+	padding:30px 10px;
 }
 
 .feedback_text, .feedback_form{
@@ -496,7 +565,7 @@ text-align:center;
 	height:auto;
 }
 
-.outlook_issue{
+.outlook_columns{
 	flex:0 0 50%;
 }
 
@@ -517,20 +586,33 @@ text-align:center;
 	justify-content:center;
 	align-items:center;
 }
-.outlook_container{
-flex-direction:row;
-}
 
+.basics_intro{
+	width:90%;
+	}
+.html_email{
+	width:90%;
+	}
+.outlook_container{
+	flex-direction:row;
+}
 .page_links{
 	flex-direction:row;
 	align-items:center;
 }
-
 .icons{
 	margin:20px 30px;
 	width:160px;
 	height:160px;
 }
 
+pre{
+	white-space: pre-wrap;
 }
 
+}
+@media screen and (min-width:1025px){
+	body{
+		font-size:16px;
+	}
+}
