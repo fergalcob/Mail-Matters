@@ -450,21 +450,19 @@ picture img{
 	background:url("../images/error.webp")no-repeat center center;
 	background-size:cover;
 	width:100%;
-	height:100vh;
+	height:auto;
+	padding:50px 0;
+	margin-top:7vh;
 }
 
 .error_404_text{
-	font-size:2.5em;
+	font-size:2em;
 	background-color:rgba(125,125,125,0.75);
 	padding:40px;
 	margin:30px;
+	height:100%;
 	border-radius:50px;
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	text-align:center;
-	
+	text-align:center;	
 }
 
 /*Thank You Page Background Image And Thank You Text Styling */
