@@ -332,6 +332,9 @@ picture img{
 		.gmail h4{
 		display:inline;
 		}
+		.gmail img{
+			max-width:70%;
+		}
 		.clients h2{
 		text-align:center;
 		margin-bottom:10px;
