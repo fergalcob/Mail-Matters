@@ -12,10 +12,10 @@
 <body>
     <div class="content_container">
         <header><a href="index.html">
-                <h2 id="logo">Mail Matters</h2>
+                <h1 id="logo">Mail Matters</h1>
             </a>
             <nav class="navbar"><input type="checkbox" id="checkbox_toggle">
-                <label for="checkbox_toggle"><img src="assets/images/burger.png" id="burger_menu"></label>
+                <label for="checkbox_toggle"><img src="assets/images/burger.webp" id="burger_menu"></label>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="basics.html">The Basics</a></li>
@@ -28,7 +28,7 @@
             <main>
                 <section id="feedback">
                     <div class="feedback_text">
-                        <h2>Share your comments and questions!</h2>
+                        <h2>Share your comments and questions!</h2><br />
                         <p>Have any comments or questions about the content on the site?</p>
                         <p>Anything you'd like to see us cover in future updates?</p>
                         <p>Feel free to leave us a comment or question in the feedback form and sign-up for our regular
@@ -38,16 +38,18 @@
                             <li>Tricks</li>
                             <li>All the latest news from the world of email!</li>
                         </ul>
-                        <p>Looking forward to hearing from you!</p>
+                        <p>Looking forward to hearing from you!</p><br />
                     </div>
                     <div class="feedback_form">
-                        <form><label for="fname">First Name: </label><input type="text" name="fname"
-                                class="text-input-name"><label for="surname">Surname: </label><input type="text"
-                                name="surname" class="text-input-name"><label for="email">Email Address: </label><input
-                                type="email" class="text-input-other"><label for="comment">Feedback: </label><textarea
-                                rows="10" cols="50" name="comment" class="text-input-other"></textarea><input
-                                type="checkbox" name="newsletter"><label for="newsletter"> Click here to also sign up
-                                for our newsletter</label><input type="submit" value="Submit" id="submit"></form>
+                        <form method="GET" action="thankyou.html"><label for="fname">First Name: <input type="text"
+                                    name="fname" class="text-input-name" id="fname" required></label><label
+                                for="surname">Surname: <input type="text" name="surname" class="text-input-name"
+                                    id="surname" required></label><label for="email">Email Address: <input type="email"
+                                    class="text-input-other" id="email" required></label><label for="comment">Feedback:
+                                <textarea rows="10" cols="50" name="comment" class="text-input-other"
+                                    id="comment"></textarea></label><label for="newsletter"><input type="checkbox"
+                                    id="newsletter" name="newsletter"> Click here to also sign up for our
+                                newsletter</label><input type="submit" value="Submit" id="submit"></form>
                     </div>
                 </section>
             </main>

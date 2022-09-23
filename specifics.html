@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Mail Matters</title>
+</head>
+
+<body>
+    <div class="content_container">
+        <header><a href="index.html">
+                <h1 id="logo">Mail Matters</h1>
+            </a>
+            <nav class="navbar"><input type="checkbox" id="checkbox_toggle">
+                <label for="checkbox_toggle"><img src="assets/images/burger.webp" id="burger_menu"></label>
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="basics.html">The Basics</a></li>
+                    <li><a href="specifics.html">The Specifics</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="specifics_masthead"><img src="assets/images/specifics.webp"></div>
+            <div class="specifics_body">
+                <section class="specifics_intro">
+                    <h1>The Specifics</h1>
+                    <p></p>
+                </section>
+                <section class="clients">
+                    <div class="gmail">
+                        <div class="gmail_border">
+                            <h2>Gmail</h2>
+                            <details>
+                                <summary>
+                                    <h4>Emails Being Clipped When Received</h4>
+                                </summary>
+                                <div class="gmail_issues">
+                                    <p>While Gmail is extremely reliable when it comes to rendering the content of your
+                                        emails, there is one major situation which can happen when you're needing to
+                                        relay a lot of information to your users. Picture this, your code is finished,
+                                        the rest renders are all looking good so you go to send the email as a test, you
+                                        check your Gmail Inbox and before you reach the end you're greeted with the
+                                        following message</p>
+                                </div><img src="assets/images/gmail_clipped.webp" style="display: block;margin: auto;">
+                                <div class="gmail_issues">
+                                    <p>While Gmail does have few limitations, it does limit the size of emails received
+                                        to ~102kb before it will clip any excess content. This limit is derived from
+                                        both the content and the code of these emails so the longer your emails get the
+                                        more likely they are to be getting clipped. Here are a few tips though to help
+                                        avoid this:<ul>
+                                            <li>Try to avoid copying and pasting your content from other sources as they
+                                                can contain their own proprietary styling which will then increase the
+                                                amount of code underlying the email which won't be necessary if you're
+                                                operating in a Gmail-heavy environment.</li>
+                                            <li>Use a single rather than multi-column design, by reducing the number of
+                                                columns you also reduce the amount of HTML and styling needed to
+                                                structure that particular layout and so reduce the overall weight of the
+                                                code.</li>
+                                            <li>Rather than trying to target your entire audience in one email, if
+                                                possible break it down into multiple emails so that your users are only
+                                                seeing what would apply to their segments of the organization</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="outlook">
+                        <div class="outlook_border">
+                            <h2>Microsoft Outlook</h2>
+                            <div class="outlook_container">
+                                <div class="outlook_columns">
+                                    <details>
+                                        <summary>
+                                            <h4>The Outlook 1px Line Bug</h4>
+                                        </summary>
+                                        <div class="outlook_issues">
+                                            <p>Starting with Outlook 2013 this particular issue began to be observed
+                                                where a 1px line would be inserted at random in the body of some emails
+                                                and has been present in all Outlook versions since that time</p><img
+                                                src="assets/images/1px.webp">
+                                            <p>What you see above is an example of what to expect when this issue
+                                                occurs, which is that a small part of the your content inherits the
+                                                background color for the body of the email which is one method to
+                                                workaround this issue using a single color as the background however
+                                                using a neutral background color for the sides of the email tends to be
+                                                of higher priority and to help readability.</p>
+                                            <p>Unfortunately, there aren't any guaranteed solutions to this particular
+                                                issue yet, but this blog post at <a
+                                                    href="https://www.actionrocket.co/email-design-review/white-lines-in-outlook">Action
+                                                    Rocket</a> goes into a number of options that can be tried to remove
+                                                these lines, these options can help but may not in all cases. We'll keep
+                                                this section updated with any updates that come in on this.</p>
+                                        </div>
+                                    </details>
+                                </div>
+                                <div class="outlook_columns">
+                                    <details>
+                                        <summary>
+                                            <h4>Outlook Ignoring Styling</h4>
+                                        </summary>
+                                        <div class="outlook_issues">
+                                            <p>Starting with Outlook 2007, Microsoft implemented Word as the renderer in
+                                                Outlook rather than Internet Explorer, however this has led to a number
+                                                of issues as Word does not support the full range of CSS styling
+                                                available in other desktop and browser-based clients. Due to this,
+                                                certain styling elements can vary across Outlook versions based on their
+                                                level of support, for example styling a full margin is generally
+                                                supported across versions, however if you attempt to style the margin
+                                                for just a single side of an item, there will be situations where this
+                                                styling is ignored and your content will be flush to the side.</p>
+                                            <p><a href="https://www.caniemail.com">Can I Email?</a> is an incredibly
+                                                useful tool when it comes to designing HTML email, especially when it
+                                                comes to Outlook, breaking down support by version for whichever styling
+                                                attribute you're looking to implement</p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_container">
+                <h3 class="social_media_text">Follow us for more on:</h3>
+                <div class="social_media"><a href="https://facebook.com"><i
+                            class="fa-brands fa-square-facebook"></i></a><a href="https://twitter.com"><i
+                            class="fa-brands fa-square-twitter"></i></a><a href="https://youtube.com"><i
+                            class="fa-brands fa-square-youtube"></i></a><a href="https://linkedin.com"><i
+                            class="fa-brands fa-linkedin"></i></a></div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/e387853ef7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
