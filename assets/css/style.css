@@ -264,7 +264,7 @@ picture img{
 	/* Styling Of The basics.html Masthead Image */
 		#basics_masthead{
 		width:100vw;
-		height:70vh;
+		height:60vh;
 		margin-top:7vh;
 		}
 	
@@ -290,7 +290,7 @@ picture img{
 	/* Masthead Styling For Specifics Page */
 		#specifics_masthead{
 		width:100vw;
-		height:70vh;
+		height:60vh;
 		margin-top:7vh;
 		}
 	
@@ -609,7 +609,9 @@ pre{
 pre{
 	white-space: pre-wrap;
 }
-
+#basics_masthead, #specifics_masthead{
+	height:70vh;
+	}
 }
 @media screen and (min-width:1025px){
 	body{
