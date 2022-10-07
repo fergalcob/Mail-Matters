@@ -15,7 +15,8 @@
                 <h1 id="logo">Mail Matters</h1>
             </a>
             <nav class="navbar"><input type="checkbox" id="checkbox_toggle">
-                <label for="checkbox_toggle"><img src="assets/images/burger.webp" id="burger_menu" alt="Open the menu"></label>
+                <label for="checkbox_toggle"><img src="assets/images/burger.webp" id="burger_menu"
+                        alt="Open the menu"></label>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="basics.html">The Basics</a></li>
@@ -27,10 +28,12 @@
         <main>
             <div id="specifics_masthead"><img src="assets/images/specifics.webp" alt=""></div>
             <div class="specifics_body">
-                <section class="specifics_intro">
+                <div id="specifics_intro">
                     <h1>The Specifics</h1>
-                    <p></p>
-                </section>
+                    <p>This is where you'll find the most common issues you'll run into for the major email clients
+                        and the best ways to avoid them in future.</p>
+                    <p>Click to expand any of the issues to find out more!</p>
+                </div>
                 <section class="clients">
                     <div class="gmail">
                         <div class="gmail_border">
@@ -46,7 +49,8 @@
                                         the rest renders are all looking good so you go to send the email as a test, you
                                         check your Gmail Inbox and before you reach the end you're greeted with the
                                         following message</p>
-                                </div><img src="assets/images/gmail_clipped.webp" style="display: block;margin: auto;" alt="The error message displayed by Gmail when size is greater than 102kb">
+                                </div><img src="assets/images/gmail_clipped.webp" style="display: block;margin: auto;"
+                                    alt="The error message displayed by Gmail when size is greater than 102kb">
                                 <div class="gmail_issues">
                                     <p>While Gmail does have few limitations, it does limit the size of emails received
                                         to ~102kb before it will clip any excess content. This limit is derived from
@@ -83,7 +87,8 @@
                                             <p>Starting with Outlook 2013 this particular issue began to be observed
                                                 where a 1px line would be inserted at random in the body of some emails
                                                 and has been present in all Outlook versions since that time</p><img
-                                                src="assets/images/1px.webp" alt="A 1 pixel line that appears when HTMl email is rendered in certain versions of Outlook">
+                                                src="assets/images/1px.webp"
+                                                alt="A 1 pixel line that appears when HTMl email is rendered in certain versions of Outlook">
                                             <p>What you see above is an example of what to expect when this issue
                                                 occurs, which is that a small part of the your content inherits the
                                                 background color for the body of the email which is one method to
@@ -92,7 +97,8 @@
                                                 of higher priority and to help readability.</p>
                                             <p>Unfortunately, there aren't any guaranteed solutions to this particular
                                                 issue yet, but this blog post at <a
-                                                    href="https://www.actionrocket.co/email-design-review/white-lines-in-outlook" target="_blank">Action
+                                                    href="https://www.actionrocket.co/email-design-review/white-lines-in-outlook"
+                                                    target="_blank">Action
                                                     Rocket</a> goes into a number of options that can be tried to remove
                                                 these lines, these options can help but may not in all cases. We'll keep
                                                 this section updated with any updates that come in on this.</p>
@@ -114,7 +120,9 @@
                                                 supported across versions, however if you attempt to style the margin
                                                 for just a single side of an item, there will be situations where this
                                                 styling is ignored and your content will be flush to the side.</p>
-                                            <p><a href="https://www.caniemail.com" target="_blank">Can I Email?</a> is an incredibly
+                                            <p><a href="https://www.caniemail.com" target="_blank">Can I Email?</a> is
+                                                an
+                                                incredibly
                                                 useful tool when it comes to designing HTML email, especially when it
                                                 comes to Outlook, breaking down support by version for whichever styling
                                                 attribute you're looking to implement</p>
@@ -128,13 +136,20 @@
             </div>
         </main>
         <footer>
-            <div class="social_media"><a href="https://facebook.com" target="_blank" aria-label="Like us on Facebook!""><i
-                class="fa-brands fa-square-facebook" aria-hidden="true"></i></a><a href="https://twitter.com" target="_blank" aria-label="Follow us on Twitter!"><i
-                class="fa-brands fa-square-twitter" aria-hidden="true"></i></a><a href="https://youtube.com" target="_blank" aria-label="Subscribe to our Youtube"><i
-                class="fa-brands fa-square-youtube" aria-hidden="true"></i></a><a href="https://linkedin.com" target="_blank" aria-label="Follow us on LinkedIn!"><i
-                class="fa-brands fa-linkedin" aria-hidden="true"></i></a></div>
+            <div class="footer_container">
+                <h3 class="social_media_text">Follow us for more on:</h3>
+                <div class="social_media"><a href="https://facebook.com" target="_blank"
+                        aria-label="Like us on Facebook!""><i
+                                class=" fa-brands fa-square-facebook" aria-hidden="true"></i></a><a
+                        href="https://twitter.com" target="_blank" aria-label="Follow us on Twitter!"><i
+                            class="fa-brands fa-square-twitter" aria-hidden="true"></i></a><a href="https://youtube.com"
+                        target="_blank" aria-label="Subscribe to our Youtube"><i class="fa-brands fa-square-youtube"
+                            aria-hidden="true"></i></a><a href="https://linkedin.com" target="_blank"
+                        aria-label="Follow us on LinkedIn!"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                </div>
             </div>
-        </footer>
+    </div>
+    </footer>
     </div>
     <script src="https://kit.fontawesome.com/e387853ef7.js" crossorigin="anonymous"></script>
 </body>
