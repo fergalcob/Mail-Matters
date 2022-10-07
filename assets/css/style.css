@@ -438,7 +438,7 @@ summary {
 
 /* Contact Page and Feedback Form styling */
 #feedback {
-	background: url("feedback.webp")repeat center center;
+	background: url("../images/feedback.webp")repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 	padding-top: 60px;
@@ -504,7 +504,7 @@ form {
 
 /*404 Page Background Image And Error Text Styling */
 .error_404 {
-	background: url("assets/images/error.webp")no-repeat center center;
+	background: url("../images/error.webp")no-repeat center center;
 	background-size: cover;
 	width: 100%;
 	height: auto;
@@ -524,7 +524,7 @@ form {
 
 /*Thank You Page Background Image And Thank You Text Styling */
 #feedback_thank_you {
-	background: url("feedback.webp")repeat center center;
+	background: url("../images/feedback.webp")repeat center center;
 	background-size: cover;
 	padding-top: 60px;
 	padding-bottom: 60px;
