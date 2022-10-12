@@ -8,6 +8,8 @@
    * [Devices & Browsers Used For Testing](#devices--browsers-used-for-testing)
    * [W3C Validator & Lighthouse Testing](#w3c-validator--lighthouse-testing)
    * [Currently Known Issues](#currently-known-issues)
+- [Deployment](#deployment)
+  * [Github Pages](#github-pages)
 - [Technologies Used](#technologies-used)
 - [Credits](#credits)
  
@@ -124,6 +126,16 @@ Similar to the color palette choices, the font choices are a number of fonts com
 ### Currently Known Issues
 
 1. When using Firefox on Android mobile devices, on the Contact page, when scrolling with the dynamic address bar enabled and is positioned at the bottom of the screen, when the address bar is hidden due to the scroll, there is empty space left where the address bar would be until the scrolling reaches the footer. This has been reported as a bug previously [here](https://github.com/mozilla-mobile/fenix/issues/8768) however the workarounds suggested there did not resolve this instance of the issue.
+
+## Deployment
+
+### Github Pages
+
+1. To deploy the live site, from the Github directory for the project, access the Settings page(indicated by the cog icon) from the navbar.
+2. Once in the Settings page, access the Pages subsection from the menu on the left under 'Code and Automation'.
+3. From here, you want to choose the source for the site, in this case 'Deploy from branch' is used as the source, followed by choosing the branch, in this case it's 'Main' and '/root'
+4. All that needs to be done from there is to save those settings and allow 5-10 minutes for deployment to complete.
+5. At that point, the page was then live at [https://fergalcob.github.io/Mail-Matters/](https://fergalcob.github.io/Mail-Matters/)
 
 ## Technologies Used
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
