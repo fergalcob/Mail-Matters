@@ -1,4 +1,6 @@
 ![Banner Image](readme/responsive.png)
+## Live Link
+[https://fergalcob.github.io/Mail-Matters/](https://fergalcob.github.io/Mail-Matters/)
 
 ## Table of Contents
 - [Styling Choices](#styling-choices)
