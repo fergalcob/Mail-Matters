@@ -134,6 +134,10 @@ Similar to the color palette choices, the font choices are a number of fonts com
    - Used for scaling the banner images for responsiveness
 * [Am I Responsive](https://ui.dev/amiresponsive) 
    - For testing and creating the Readme banner image
+* [Coolors](https://coolors.co)
+  - Used to create the color palette shown in the Readme
+* [RealFaviconGenerator](https://realfavicongenerator.net/)
+  - Used for generating the favicon set and code from the personally  created icon
 
 ## Credits
 * The dropdown menu is adapted from the Checkbox Hack guide from [CSS-Tricks](https://css-tricks.com/the-checkbox-hack/)
