@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Looking for a specific issue you're encountering with your email, look no further, here you'll find all the common issues and how to avoid them">
-    <meta
-        keywords="email client, email clipping, 1 pixel line bug, email workarounds, email best practices, CSS client support">
+    <meta name="keywords"
+        content="email client, email clipping, 1 pixel line bug, email workarounds, email best practices, CSS client support">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -36,15 +36,13 @@
             </nav>
         </header>
         <main>
-            <div id="specifics_masthead"><picture>
-                <source
-                    media="(min-width:320px)"
-                    srcset="assets/images/specifics-small.webp">
-                <source
-                    media="(min-width:1024px)"
-                    srcset="assets/images/specifics.webp">
-                <img src="assets/images/specifics-small.webp" alt="">
-            </picture></div>
+            <div id="specifics_masthead">
+                <picture>
+                    <source media="(min-width:320px)" srcset="assets/images/specifics-small.webp">
+                    <source media="(min-width:1024px)" srcset="assets/images/specifics.webp">
+                    <img src="assets/images/specifics-small.webp" alt="">
+                </picture>
+            </div>
             <div class="specifics_body">
                 <div id="specifics_intro">
                     <h1>The Specifics</h1>
@@ -74,20 +72,21 @@
                                         to ~102kb before it will clip any excess content. This limit is derived from
                                         both the content and the code of these emails so the longer your emails get the
                                         more likely they are to be getting clipped. Here are a few tips though to help
-                                        avoid this:<ul>
-                                            <li>Try to avoid copying and pasting your content from other sources as they
-                                                can contain their own proprietary styling which will then increase the
-                                                amount of code underlying the email which won't be necessary if you're
-                                                operating in a Gmail-heavy environment.</li>
-                                            <li>Use a single rather than multi-column design, by reducing the number of
-                                                columns you also reduce the amount of HTML and styling needed to
-                                                structure that particular layout and so reduce the overall weight of the
-                                                code.</li>
-                                            <li>Rather than trying to target your entire audience in one email, if
-                                                possible break it down into multiple emails so that your users are only
-                                                seeing what would apply to their segments of the organization</li>
-                                        </ul>
-                                    </p>
+                                        avoid this:</p><br>
+                                    <ul>
+                                        <li>Try to avoid copying and pasting your content from other sources as they
+                                            can contain their own proprietary styling which will then increase the
+                                            amount of code underlying the email which won't be necessary if you're
+                                            operating in a Gmail-heavy environment.</li>
+                                        <li>Use a single rather than multi-column design, by reducing the number of
+                                            columns you also reduce the amount of HTML and styling needed to
+                                            structure that particular layout and so reduce the overall weight of the
+                                            code.</li>
+                                        <li>Rather than trying to target your entire audience in one email, if
+                                            possible break it down into multiple emails so that your users are only
+                                            seeing what would apply to their segments of the organization</li>
+                                    </ul>
+
                                 </div>
                             </details>
                         </div>
@@ -158,17 +157,16 @@
             <div class="footer_container">
                 <h3 class="social_media_text">Follow us for more on:</h3>
                 <div class="social_media"><a href="https://facebook.com" target="_blank"
-                        aria-label="Like us on Facebook!""><i
-                                class=" fa-brands fa-square-facebook" aria-hidden="true"></i></a><a
-                        href="https://twitter.com" target="_blank" aria-label="Follow us on Twitter!"><i
-                            class="fa-brands fa-square-twitter" aria-hidden="true"></i></a><a href="https://youtube.com"
-                        target="_blank" aria-label="Subscribe to our Youtube"><i class="fa-brands fa-square-youtube"
+                        aria-label="Like us on Facebook!"><i class=" fa-brands fa-square-facebook"
+                            aria-hidden="true"></i></a><a href="https://twitter.com" target="_blank"
+                        aria-label="Follow us on Twitter!"><i class="fa-brands fa-square-twitter"
+                            aria-hidden="true"></i></a><a href="https://youtube.com" target="_blank"
+                        aria-label="Subscribe to our Youtube"><i class="fa-brands fa-square-youtube"
                             aria-hidden="true"></i></a><a href="https://linkedin.com" target="_blank"
                         aria-label="Follow us on LinkedIn!"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
                 </div>
             </div>
-    </div>
-    </footer>
+        </footer>
     </div>
     <script src="https://kit.fontawesome.com/e387853ef7.js" crossorigin="anonymous"></script>
 </body>

@@ -36,13 +36,12 @@
             </nav>
         </header>
         <main>
-            <div id="basics_masthead">                <source
-                media="(min-width:320px)"
-                srcset="assets/images/basics-small.webp">
-            <source
-                media="(min-width:1024px)"
-                srcset="assets/images/basics.webp">
-            <img src="assets/images/basics-small.webp" alt=""></div>
+            <div id="basics_masthead">
+                <picture>
+                    <source media="(min-width:320px)" srcset="assets/images/basics-small.webp">
+                    <source media="(min-width:1024px)" srcset="assets/images/basics.webp">
+                    <img src="assets/images/basics-small.webp" alt=""></picture>
+            </div>
             <div class="basics_body">
                 <section class="basics_intro">
                     <h2>Intro To Email</h2>
@@ -70,9 +69,8 @@
                         your organization, you want to do so in an eyecatching and appealing way, rather than simply
                         sending a large block of text. So what's the solution, why HTML-based email of course, allowing
                         you to put structure to your emails including images, video and your own branding! So what is
-                        HTML-based email?
-                        <table
-                            style="height:100px;width:100px;border:1px solid #000000; margin:10px auto; border-collapse:collapse;">
+                        HTML-based email?</p><br>
+                        <table style="height:100px;width:100px;border:1px solid #000000; margin:10px auto; border-collapse:collapse;">
                             <tr>
                                 <td style="border:1px solid #000000;"></td>
                                 <td style="border:1px solid #000000;"></td>
@@ -82,9 +80,8 @@
                                 <td style="border:1px solid #000000;"></td>
                             </tr>
                         </table>
-                    </p>
                     <p>What you see above is a very simple table made in HTML and rendered by the browser you're using
-                        to view this page and what you'll see below is the code underlying that very same table:
+                        to view this page and what you'll see below is the code underlying that very same table:</p><br>
                         <pre>     &lt;table style="height:100px;width:100px;border:1px solid #000000; margin:10px auto; border-collapse:collapse;"&gt;
                             &lt;tr&gt;
                                 &lt;td style="border:1px solid #000000;"&gt;&lt;/td&gt;
@@ -94,9 +91,9 @@
                                 &lt;td style="border:1px solid #000000;"&gt;&lt;/td&gt;
                                 &lt;td style="border:1px solid #000000;"&gt;&lt;/td&gt;
                             &lt;/tr&gt;
-                        &lt;/table&gt;</pre>
-                        </pre?>
-                    </p>
+                        &lt;/table&gt;
+                    </pre>
+                    
                     <p>When it comes to HTML-based email, the code works exactly the same way and whether you're coding
                         it yourself or using a template made by a designer or one of the various online communications
                         platform, they all work on this same code. While our browsers are built to handle this code
@@ -106,20 +103,22 @@
                 </section>
             </div>
         </main>
-        <footer>
-            <div class="footer_container">
-                <h3 class="social_media_text">Follow us for more on:</h3>
-                <div class="social_media"><a href="https://facebook.com" target="_blank"
-                        aria-label="Like us on Facebook!""><i
-                    class=" fa-brands fa-square-facebook" aria-hidden="true"></i></a><a href="https://twitter.com"
-                        target="_blank" aria-label="Follow us on Twitter!"><i class="fa-brands fa-square-twitter"
-                            aria-hidden="true"></i></a><a href="https://youtube.com" target="_blank"
-                        aria-label="Subscribe to our Youtube"><i class="fa-brands fa-square-youtube"
-                            aria-hidden="true"></i></a><a href="https://linkedin.com" target="_blank"
-                        aria-label="Follow us on LinkedIn!"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
-                </div>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <h3 class="social_media_text">Follow us for more on:</h3>
+            <div class="social_media"><a href="https://facebook.com" target="_blank"
+                    aria-label="Like us on Facebook!"><i class=" fa-brands fa-square-facebook"
+                        aria-hidden="true"></i></a><a href="https://twitter.com" target="_blank"
+                    aria-label="Follow us on Twitter!"><i class="fa-brands fa-square-twitter"
+                        aria-hidden="true"></i></a><a href="https://youtube.com" target="_blank"
+                    aria-label="Subscribe to our Youtube"><i class="fa-brands fa-square-youtube"
+                        aria-hidden="true"></i></a><a href="https://linkedin.com" target="_blank"
+                    aria-label="Follow us on LinkedIn!"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
             </div>
-            <script src="https://kit.fontawesome.com/e387853ef7.js" crossorigin="anonymous"></script>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/e387853ef7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
