@@ -64,7 +64,7 @@ label {
 }
 
 h2 {
-	font-size: 1.8em;
+	font-size: 2em;
 }
 
 h3 {
@@ -205,7 +205,7 @@ picture img {
 
 .goals h3 {
 	border-bottom: 1px solid #212121;
-	color: #ffffff;
+	color: #212121;
 	text-align: center;
 	display: table;
 	margin: 0 auto;
