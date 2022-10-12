@@ -2,6 +2,15 @@
 
 <details>
   <summary>index.html results - Validator and Lighthouse</summary>
+  
+  #### W3C Validator Results
+  ![Testing Results - contact.html](testing/contact-validator.png)
+  
+  #### Lighthouse Results - Desktop
+  ![Testing Results - contact.html](testing/contact-desktop.png)
+  
+  #### Lighthouse Results - Mobile
+  ![Testing Results - contact.html](testing/contact-mobile.png)
 </details>
 <details>
   <summary>basics.html results - Validator and Lighthouse</summary>
@@ -30,12 +39,41 @@
 </details>
 <details>
   <summary>contact.html results - Validator and Lighthouse</summary>
+  
+  #### W3C Validator Results
+  ![Testing Results - contact.html](testing/contact-validator.png)
+  
+  #### Lighthouse Results - Desktop
+  ![Testing Results - contact.html](testing/contact-desktop.png)
+  
+  #### Lighthouse Results - Mobile
+  ![Testing Results - contact.html](testing/contact-mobile.png)
+  
 </details>
 <details>
   <summary>thankyou.html results - Validator and Lighthouse</summary>
+  
+  #### W3C Validator Results
+  ![Testing Results - thankyou.html](testing/thankyou-validator.png)
+  
+  #### Lighthouse Results - Desktop
+  ![Testing Results - thankyou.html](testing/thankyou-desktop.png)
+  
+  #### Lighthouse Results - Mobile
+  ![Testing Results - thankyou.html](testing/thankyou-mobile.png)
 </details>
 <details>
-  <summary>error.html results - Validator and Lighthouse</summary>
+  <summary>404.html results - Validator and Lighthouse</summary>
+  
+  #### W3C Validator Results
+  ![Testing Results - 404.html](testing/404-validator.png)
+  
+  #### Lighthouse Results - Desktop
+  ![Testing Results - 404.html](testing/404-desktop.png)
+  
+  #### Lighthouse Results - Mobile
+  ![Testing Results - 404.html](testing/404-mobile.png)
+  
 </details>
 
 
