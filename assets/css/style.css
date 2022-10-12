@@ -203,8 +203,8 @@ picture img {
 	padding: 30px 10px;
 }
 
-.goals h2 {
-	border-bottom: 1px solid #ffffff;
+.goals h3 {
+	border-bottom: 1px solid #212121;
 	color: #ffffff;
 	text-align: center;
 	display: table;
