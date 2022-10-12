@@ -36,7 +36,13 @@
             </nav>
         </header>
         <main>
-            <div id="basics_masthead"><img src="assets/images/basics.webp" alt=""></div>
+            <div id="basics_masthead">                <source
+                media="(min-width:320px)"
+                srcset="assets/images/basics-small.webp">
+            <source
+                media="(min-width:1024px)"
+                srcset="assets/images/basics.webp">
+            <img src="assets/images/basics-small.webp" alt=""></div>
             <div class="basics_body">
                 <section class="basics_intro">
                     <h2>Intro To Email</h2>

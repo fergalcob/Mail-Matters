@@ -36,7 +36,15 @@
             </nav>
         </header>
         <main>
-            <div id="specifics_masthead"><img src="assets/images/specifics.webp" alt=""></div>
+            <div id="specifics_masthead"><picture>
+                <source
+                    media="(min-width:320px)"
+                    srcset="assets/images/specifics-small.webp">
+                <source
+                    media="(min-width:1024px)"
+                    srcset="assets/images/specifics.webp">
+                <img src="assets/images/specifics-small.webp" alt="">
+            </picture></div>
             <div class="specifics_body">
                 <div id="specifics_intro">
                     <h1>The Specifics</h1>
