@@ -149,7 +149,7 @@ h4 {
 
 /* front page masthead additions */
 #masthead_image {
-	width: 100vw;
+	width: 100%;
 	height: 70vh;
 	margin-top: 5vh;
 	overflow: hidden;
@@ -316,7 +316,7 @@ picture img {
 
 /* Styling Of The basics.html Masthead Image */
 #basics_masthead {
-	width: 100vw;
+	width: 100%;
 	height: 70vh;
 	margin-top: 5vh;
 }
@@ -343,7 +343,7 @@ summary {
 
 /* Masthead Styling For Specifics Page */
 #specifics_masthead {
-	width: 100vw;
+	width: 100%;
 	height: 70vh;
 	margin-top: 5vh;
 }
