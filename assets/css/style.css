@@ -466,11 +466,11 @@ summary {
 	background-attachment: fixed;
 	padding-top: 60px;
 	padding-bottom: 60px;
+	min-height:100vh;
 }
 
 /* Styling For The Feedback Text Box */
 .feedback_text {
-	height: 100%;
 	width: 75%;
 	margin: 50px auto 0 auto;
 	background-color: rgba(125, 125, 125, 0.9);
@@ -485,7 +485,6 @@ summary {
 
 /* Styling For The Form Layout And Form Fields */
 .feedback_form {
-	height: 100%;
 	width: 75%;
 	margin: 80px auto 0 auto;
 	background-color: rgba(125, 125, 125, 0.9);
