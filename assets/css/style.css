@@ -151,7 +151,7 @@ h4 {
 #masthead_image {
 	width: 100vw;
 	height: 70vh;
-	margin-top: 6vh;
+	margin-top: 5vh;
 	overflow: hidden;
 }
 
@@ -318,7 +318,7 @@ picture img {
 #basics_masthead {
 	width: 100vw;
 	height: 70vh;
-	margin-top: 6vh;
+	margin-top: 5vh;
 }
 
 #basics_masthead img {
@@ -345,7 +345,7 @@ summary {
 #specifics_masthead {
 	width: 100vw;
 	height: 70vh;
-	margin-top: 6vh;
+	margin-top: 5vh;
 }
 
 #specifics_masthead img {
