@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: Verdana;
+	font-family: Verdana, "Arial Black", sans-serif;
 }
 
 html {
@@ -27,7 +27,6 @@ header {
 	width: 100%;
 	height: auto;
 	background-color: #666666;
-	font-family: Segoe UI;
 	border-bottom: 4px solid #d1d1d1;
 	position: fixed;
 	top: 0;
@@ -53,7 +52,7 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: Trebuchet MS;
+	font-family: Trebuchet MS, Arial, sans-serif;
 }
 
 p,
