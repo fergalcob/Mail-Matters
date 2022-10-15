@@ -3,9 +3,22 @@
 [https://fergalcob.github.io/Mail-Matters/](https://fergalcob.github.io/Mail-Matters/)
 
 ## Table of Contents
+- [Features](#features)
+  * [Common Features](#common-features)
+    1. [Navbar](#navbar)
+    2. [Footer](#footer)
+  * [Index.html Features](#index.html-features)
+    1. [Banner Image](#banner-image)
+    2. [Site Aims](#site-aims)
+  * [Basics.html Features](#basics.html-features)
+    1. [Page Layout](#page-layout)
+  * [Specifics.html Features](#specifics.html-features)
+    1. [Client Specific Information](#client-specific-information)
+  * [Contact.html Features](#contact.html-features)
+    1. [Contact Form](#contact-form)
 - [Styling Choices](#styling-choices)
    * [Color Palette](#color-palette)
-   * [Font Usage](#font-usage)
+   * [Typography](#typography)
 - [Device Testing Results & Known Issues](#device-testing-results--known-issues)
    * [Devices & Browsers Used For Testing](#devices--browsers-used-for-testing)
    * [W3C Validator & Lighthouse Testing](#w3c-validator--lighthouse-testing)
@@ -15,6 +28,87 @@
 - [Technologies Used](#technologies-used)
 - [Credits](#credits)
  
+## Features 
+
+### Common Features
+
+#### Navbar
+
+| Laptop/Desktop Banner |
+| --- |
+| ![Desktop Navbar](readme/navbar-desktop.png) |
+
+| Mobile Navbar Closed | Mobile Navbar Open |
+| --- | --- |
+| ![Closed Mobile Navbar](readme/navbar-mobile.png) | ![Opened Mobile Navbar](readme/navbar-mobile-extended.png) |
+
+#### Footer
+| Laptop/Desktop Footer |
+| --- |
+| ![Desktop Footer](readme/footer-laptop.png) |
+
+| Mobile Footer |
+| --- |
+| ![Mobile Footer](readme/footer-mobile.png) |
+
+### Index.html features
+
+#### Banner Image
+
+| Laptop/Desktop Banner |
+| --- |
+| ![Laptop Banner](readme/banner-laptop.png) |
+
+| Mobile Banner | Tablet Banner |
+| --- | --- |
+| ![Mobile Banner](readme/banner-mobile.png) | ![Tablet Banner](readme/banner-tablet.png) |
+
+#### Site Aims
+
+| 3-Column Laptop/Desktop Layout Of Site Aims |
+| --- |
+| ![Laptop/Desktop Site Aims](readme/3-column-laptop.png)
+
+| Single Column Mobile Layout Of Site Aims |
+| --- |
+| ![Mobile Site Aims](readme/1-column-intro-mobile.png) |
+
+### Basics.html Features
+
+#### Page Layout
+
+| Laptop/Desktop Layout Of Intro To Email |
+| --- |
+| ![Laptop/Desktop Layout Of Intro To Email](readme/basics-intro-laptop.png) |
+
+| Mobile Layout Of Intro To Email |
+| --- |
+| ![Mobile Layout Of Intro To Email](readme/basics-intro-mobile.png) |
+
+### Specifics.html Features
+
+#### Client Specific Information
+
+| Laptop/Desktop Layout Of Client Information |
+| --- |
+| ![Laptop/Desktop Clients Layout](readme/specifics-layout-laptop.png) |
+
+| Mobile Layout Of Client Information Closed | Mobile Layout Of Client Information Open |
+| --- | --- |
+| ![Mobile Client Layout Closed](readme/specifics-mobile-body.png) | ![Mobile Client Layout Open](readme/specifics-mobile-expanded.png) |
+
+### Contact.html Features
+
+#### Contact Form
+
+| Laptop/Desktop Layout Of Contact Form |
+| --- |
+| ![Laptop/Desktop Layout](readme/contact-form-laptop.png) |
+
+| Mobile Layout Of Contact Form |
+| --- |
+| ![Mobile Layout](readme/contact-form-mobile.png) |
+
 ## Styling Choices
 
 ### Color Palette
@@ -24,7 +118,7 @@ The primary choices shift from light to dark grays as these would be commonly us
 
 The red and blue shades are used in the specifics.html page to outline the information relative to their respective email clients, #DB4437 being the red used by Google in Gmail and #00A2ED being Microsoft Outlook blue.
 
-### Font Usage
+### Typography
 
 Similar to the color palette choices, the font choices are a number of fonts commonly used in HTML emails, as email clients may not respect the styling necessary to import a font-family via URL and also in some cases, users may not be able to guarantee that their audience would have a local copy of a font available, the use of web-safe fonts is a necessity. For this site, I've used two of those web-safe fonts, Verdana and Trebuchet MS due to their reach across operating systems.
 
