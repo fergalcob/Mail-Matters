@@ -383,6 +383,7 @@ summary {
 	border-radius: 20px;
 	padding: 10px;
 	margin: 15px;
+	align-self: stretch;
 }
 
 .gmail_issues li {
